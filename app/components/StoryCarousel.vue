@@ -176,12 +176,14 @@
           <div class="flex gap-6 justify-end items-center">
             <button
               type="button"
+              name="previous"
               @click="handlePrevious"
               class="carousel-arrow carousel-arrow-prev w-8 h-8 cursor-pointer transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F26E21] rounded-full"
               aria-label="Previous slide"
             />
             <button
               type="button"
+              name="next"
               @click="handleNext"
               class="carousel-arrow carousel-arrow-next w-8 h-8 cursor-pointer transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F26E21] rounded-full"
               aria-label="Next slide"

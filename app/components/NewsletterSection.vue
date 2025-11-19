@@ -43,6 +43,7 @@
         class="flex items-center gap-2 text-[#333333] font-family-sans text-[15px] dt:text-[16px] font-semibold tracking-[0.48px] uppercase"
         :disabled="isLoading"
         :aria-busy="isLoading"
+        aria-label="Submit newsletter form"
       >
         <img
           src="/assets/icons/guidance_right-arrow.svg"
