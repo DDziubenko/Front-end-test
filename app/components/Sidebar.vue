@@ -9,11 +9,11 @@
     />
 
     <!-- Sidebar -->
-    <aside
+    <div
       ref="sidebarRef"
       name="sidebar"
       aria-label="Sidebar"
-      role="feed"
+      role="dialog"
       aria-modal="true"
       class="fixed top-0 left-0 w-full bg-[ivory] z-50 overflow-y-auto overflow-x-hidden transition-all duration-300 ease-in-out h-full lg:h-auto lg:max-h-[90vh]"
       :class="[
@@ -67,7 +67,7 @@
             <div class="flex flex-col gap-8 items-start w-full">
               <!-- Beach Experience -->
               <a
-                href="#beach-experience"
+                href="#"
                 class="flex flex-col items-start text-black w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
                 aria-label="Book Beach Experience - Reserve beach day bed or lounge chair"
               >
@@ -85,7 +85,7 @@
 
               <!-- Restaurant reservation -->
               <a
-                href="#restaurant-reservation"
+                href="#"
                 class="flex flex-col items-start text-black w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
                 aria-label="Book Restaurant Reservation - Reserve table for dining on deck or beach"
               >
@@ -104,7 +104,7 @@
 
               <!-- Private Event -->
               <a
-                href="#private-event"
+                href="#"
                 class="flex flex-col items-start text-black w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
                 aria-label="Book Private Event - Contact us for special event planning"
               >
@@ -165,7 +165,7 @@
           </div>
         </div>
       </div>
-    </aside>
+    </div>
   </Teleport>
 </template>
 
