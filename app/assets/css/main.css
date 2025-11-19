@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Bai Jamjuree', sans-serif;
-  --font-display: 'Ostrich Sans', sans-serif;
-  --font-taykari: 'TayKari', sans-serif;
-  
+  --font-sans: "Bai Jamjuree", sans-serif;
+  --font-display: "Ostrich Sans", sans-serif;
+  --font-taykari: "TayKari", sans-serif;
+
   /* Custom breakpoints for carousel */
   --breakpoint-sdt: 53.75rem;
   --breakpoint-dt: 56.25rem;
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 .fade-enter-active,
@@ -50,7 +50,6 @@ body {
   opacity: 1;
 }
 
-
 /* Gallery button styles */
 .gallery-button {
   position: relative;
@@ -59,7 +58,7 @@ body {
 }
 
 .gallery-button::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border: 1.5px solid #333333;
@@ -68,11 +67,11 @@ body {
 }
 
 .gallery-button:hover::before {
-  border-color: #F26E21;
+  border-color: #f26e21;
 }
 
 .gallery-button:hover span {
-  color: #F26E21;
+  color: #f26e21;
 }
 
 .gallery-button span {
@@ -103,5 +102,62 @@ body {
 
 .gallery-button-mobile:hover img,
 .gallery-button-desktop:hover img {
-  filter: brightness(0) saturate(100%) invert(45%) sepia(57%) saturate(1186%) hue-rotate(347deg) brightness(94%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(45%) sepia(57%) saturate(1186%)
+    hue-rotate(347deg) brightness(94%) contrast(101%);
+}
+
+.event-button-mobile::before,
+.event-button-mobile::after,
+.event-button-desktop::before,
+.event-button-desktop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+}
+
+.event-button-mobile:hover::before,
+.event-button-mobile:hover::after,
+.event-button-desktop:hover::before,
+.event-button-desktop:hover::after {
+  background-color: #f26e21;
+}
+
+/* Mobile Button Masks */
+.event-button-mobile::before {
+  -webkit-mask: url("/assets/icons/events/button-ellipse.svg") no-repeat
+    center / contain;
+  mask: url("/assets/icons/events/button-ellipse.svg") no-repeat center /
+    contain;
+  z-index: 1;
+}
+
+.event-button-mobile::after {
+  -webkit-mask: url("/assets/icons/events/button-wave-mobile.svg") no-repeat
+    center / contain;
+  mask: url("/assets/icons/events/button-wave-mobile.svg") no-repeat center /
+    contain;
+  z-index: 2;
+}
+
+/* Desktop Button Masks */
+.event-button-desktop::before {
+  -webkit-mask: url("/assets/icons/events/button-ellipse.svg") no-repeat
+    center / contain;
+  mask: url("/assets/icons/events/button-ellipse.svg") no-repeat center /
+    contain;
+  z-index: 1;
+}
+
+.event-button-desktop::after {
+  -webkit-mask: url("/assets/icons/events/button-wave-desktop.svg") no-repeat
+    center / contain;
+  mask: url("/assets/icons/events/button-wave-desktop.svg") no-repeat center /
+    contain;
+  z-index: 2;
 }
