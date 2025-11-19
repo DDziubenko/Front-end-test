@@ -8,6 +8,7 @@
       autoplay
       muted
       loop
+      fetchpriority="high"
       playsinline
       preload="auto"
       aria-label="Bonny Moon Beach Club promotional video"
@@ -22,6 +23,7 @@
       src="/images/video-poster.webp"
       alt="Bonny Moon Beach Club"
       class="absolute inset-0 w-full h-full object-cover hidden motion-reduce:block -z-10"
+      fetchpriority="high"
       loading="eager"
     />
 
