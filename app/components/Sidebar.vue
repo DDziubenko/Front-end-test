@@ -11,7 +11,9 @@
     <!-- Sidebar -->
     <aside
       ref="sidebarRef"
-      role="dialog"
+      name="sidebar"
+      aria-label="Sidebar"
+      role="feed"
       aria-modal="true"
       class="fixed top-0 left-0 w-full bg-[ivory] z-50 overflow-y-auto overflow-x-hidden transition-all duration-300 ease-in-out h-full lg:h-auto lg:max-h-[90vh]"
       :class="[
