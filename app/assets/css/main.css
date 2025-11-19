@@ -10,6 +10,10 @@
   --breakpoint-dt: 56.25rem;
   --breakpoint-ldt: 90rem;
   --breakpoint-1.5xl: 90rem;
+  --breakpoint-xldt: 100.0625rem;
+  --breakpoint-2xldt: 123.8125rem;
+  --breakpoint-3xldt: 160.0625rem;
+  --breakpoint-4xldt: 165.625rem;
 }
 
 body {
@@ -46,26 +50,6 @@ body {
   opacity: 1;
 }
 
-/* Experience link styles */
-.experience-link {
-  text-decoration: none;
-}
-
-.experience-link span {
-  transition: color 0.3s ease;
-}
-
-.experience-link:hover span {
-  color: #F26E21;
-}
-
-.experience-link:hover .experience-wave path {
-  stroke: #F26E21;
-}
-
-.experience-wave path {
-  transition: stroke 0.3s ease;
-}
 
 /* Gallery button styles */
 .gallery-button {
@@ -101,20 +85,23 @@ body {
   display: block;
   text-decoration: none;
   color: #333333;
-  transition: color 0.3s ease;
 }
 
-.gallery-button-mobile:hover,
-.gallery-button-desktop:hover {
-  color: #F26E21;
+.gallery-button-mobile picture,
+.gallery-button-desktop picture,
+.gallery-button-mobile img,
+.gallery-button-desktop img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.gallery-button-mobile .button-text,
-.gallery-button-desktop .button-text {
-  transition: fill 0.3s ease;
+.gallery-button-mobile img,
+.gallery-button-desktop img {
+  transition: filter 0.3s ease;
 }
 
-.gallery-button-mobile .button-wave,
-.gallery-button-desktop .button-wave {
-  transition: stroke 0.3s ease;
+.gallery-button-mobile:hover img,
+.gallery-button-desktop:hover img {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(57%) saturate(1186%) hue-rotate(347deg) brightness(94%) contrast(101%);
 }

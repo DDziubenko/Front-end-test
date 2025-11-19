@@ -10,6 +10,9 @@
 
     <!-- Sidebar -->
     <aside
+      ref="sidebarRef"
+      role="dialog"
+      aria-modal="true"
       class="fixed top-0 left-0 w-full bg-[ivory] z-50 overflow-y-auto overflow-x-hidden transition-all duration-300 ease-in-out h-full lg:h-auto lg:max-h-[90vh]"
       :class="[
         isOpen
@@ -52,7 +55,7 @@
                 />
               </div>
               <p
-                class="font-['Bai_Jamjuree',sans-serif] font-bold leading-[1.4] text-[11px] text-black uppercase whitespace-nowrap"
+                class="font-sans font-bold leading-[1.4] text-[11px] text-black uppercase whitespace-nowrap"
               >
                 Select a space:
               </p>
@@ -67,12 +70,12 @@
                 aria-label="Book Beach Experience - Reserve beach day bed or lounge chair"
               >
                 <h2
-                  class="font-['Ostrich_Sans',sans-serif] font-black leading-[1.1] text-[36px] mb-0"
+                  class="font-display font-black leading-[1.1] text-[36px] mb-0"
                 >
                   Beach Experience
                 </h2>
                 <p
-                  class="font-['Bai_Jamjuree',sans-serif] font-normal leading-[1.5] text-base w-full"
+                  class="font-sans font-normal leading-normal text-base w-full"
                 >
                   Reserve a beach day bed or lounge chair.
                 </p>
@@ -85,12 +88,12 @@
                 aria-label="Book Restaurant Reservation - Reserve table for dining on deck or beach"
               >
                 <h2
-                  class="font-['Ostrich_Sans',sans-serif] font-black leading-[1.1] text-[36px] mb-0"
+                  class="font-display font-black leading-[1.1] text-[36px] mb-0"
                 >
                   Restaurant reservation
                 </h2>
                 <p
-                  class="font-['Bai_Jamjuree',sans-serif] font-normal leading-[1.5] text-base w-full"
+                  class="font-sans font-normal leading-normal text-base w-full"
                 >
                   Book a table for dining, whether on our deck area, or right on
                   the beach.
@@ -104,12 +107,12 @@
                 aria-label="Book Private Event - Contact us for special event planning"
               >
                 <h2
-                  class="font-['Ostrich_Sans',sans-serif] font-black leading-[1.1] text-[36px] mb-0"
+                  class="font-display font-black leading-[1.1] text-[36px] mb-0"
                 >
                   Private Event
                 </h2>
                 <p
-                  class="font-['Bai_Jamjuree',sans-serif] font-normal leading-[1.5] text-base w-full"
+                  class="font-sans font-normal leading-normal text-base w-full"
                 >
                   Planning a special event? Contact us for more information.
                 </p>
@@ -122,56 +125,41 @@
             class="flex flex-wrap gap-8 items-end relative shrink-0 w-full xl:w-auto mt-8 xl:mt-0 max-w-full"
           >
             <!-- Image 1 -->
-            <picture class="h-[208px] w-[402px] relative shrink-0 block">
-              <source
-                :srcset="`${sidebar1_402w} 402w, ${sidebar1_603w} 603w, ${sidebar1_804w} 804w`"
-                sizes="(max-width: 402px) 402px, (max-width: 603px) 603px, 402px"
-                type="image/webp"
-              />
-              <img
-                :src="sidebar1_804w_jpg"
-                :srcset="`${sidebar1_804w_jpg} 804w`"
+            <div class="h-[208px] w-[402px] relative shrink-0 block">
+              <NuxtImg
+                src="/images/sidebar/sidebar-beach.webp"
+                sizes="402px"
                 alt="Beach Experience - Beach day beds and lounge chairs at Bonny Moon Beach Club"
                 class="h-[208px] w-[402px] object-cover"
                 loading="lazy"
                 width="402"
                 height="208"
               />
-            </picture>
+            </div>
             <!-- Image 2 -->
-            <picture class="h-[303px] w-[314px] relative shrink-0 block">
-              <source
-                :srcset="`${sidebar2_314w} 314w, ${sidebar2_471w} 471w, ${sidebar2_628w} 628w`"
-                sizes="(max-width: 314px) 314px, (max-width: 471px) 471px, 314px"
-                type="image/webp"
-              />
-              <img
-                :src="sidebar2_628w_jpg"
-                :srcset="`${sidebar2_628w_jpg} 628w`"
+            <div class="h-[303px] w-[314px] relative shrink-0 block">
+              <NuxtImg
+                src="/images/sidebar/sidebar-cup.webp"
+                sizes="314px"
                 alt="Restaurant Reservation - Beachfront dining at Bonny Moon Beach Club"
                 class="h-[303px] w-[314px] object-cover"
                 loading="lazy"
                 width="314"
                 height="303"
               />
-            </picture>
+            </div>
             <!-- Image 3 -->
-            <picture class="h-[173px] w-[141px] relative shrink-0 block">
-              <source
-                :srcset="`${sidebar3_141w} 141w, ${sidebar3_212w} 212w, ${sidebar3_282w} 282w`"
-                sizes="(max-width: 141px) 141px, (max-width: 212px) 212px, 141px"
-                type="image/webp"
-              />
-              <img
-                :src="sidebar3_282w_jpg"
-                :srcset="`${sidebar3_282w_jpg} 282w`"
+            <div class="h-[173px] w-[141px] relative shrink-0 block">
+              <NuxtImg
+                src="/images/sidebar/sidebar-flag.webp"
+                sizes="141px"
                 alt="Private Event - Special event planning at Bonny Moon Beach Club"
                 class="h-[173px] w-[141px] object-cover"
                 loading="lazy"
                 width="141"
                 height="173"
               />
-            </picture>
+            </div>
           </div>
         </div>
       </div>
@@ -183,18 +171,83 @@
 import doodleIcon from "~/assets/icons/doodle.svg";
 import logoBlack from "~/assets/icons/logo-black.svg";
 import riCross from "~/assets/icons/ri_cross.svg";
-import sidebar1_402w from "~/assets/images/sidebar/sidebar-1-402w.webp";
-import sidebar1_603w from "~/assets/images/sidebar/sidebar-1-603w.webp";
-import sidebar1_804w_jpg from "~/assets/images/sidebar/sidebar-1-804w.jpg";
-import sidebar1_804w from "~/assets/images/sidebar/sidebar-1-804w.webp";
-import sidebar2_314w from "~/assets/images/sidebar/sidebar-2-314w.webp";
-import sidebar2_471w from "~/assets/images/sidebar/sidebar-2-471w.webp";
-import sidebar2_628w_jpg from "~/assets/images/sidebar/sidebar-2-628w.jpg";
-import sidebar2_628w from "~/assets/images/sidebar/sidebar-2-628w.webp";
-import sidebar3_141w from "~/assets/images/sidebar/sidebar-3-141w.webp";
-import sidebar3_212w from "~/assets/images/sidebar/sidebar-3-212w.webp";
-import sidebar3_282w_jpg from "~/assets/images/sidebar/sidebar-3-282w.jpg";
-import sidebar3_282w from "~/assets/images/sidebar/sidebar-3-282w.webp";
 
 const { isOpen, close } = useSidebar();
+
+// Accessibility & Scroll Lock
+const sidebarRef = ref<HTMLElement | null>(null);
+let lastActiveElement: HTMLElement | null = null;
+
+watch(isOpen, async (value) => {
+  if (import.meta.client) {
+    if (value) {
+      // Lock scroll
+      document.body.style.overflow = "hidden";
+      lastActiveElement = document.activeElement as HTMLElement;
+
+      await nextTick();
+
+      // Focus trap: set focus to the first focusable element (Close button is usually best first target)
+      const closeBtn = sidebarRef.value?.querySelector(
+        'button[aria-label="Close menu"]',
+      ) as HTMLElement;
+      if (closeBtn) {
+        closeBtn.focus();
+      }
+    } else {
+      // Unlock scroll
+      document.body.style.overflow = "";
+
+      // Return focus
+      if (lastActiveElement) {
+        lastActiveElement.focus();
+      }
+    }
+  }
+});
+
+// Handle keyboard events
+const handleKeydown = (e: KeyboardEvent) => {
+  if (!isOpen.value) return;
+
+  if (e.key === "Escape") {
+    close();
+    e.preventDefault();
+  }
+
+  if (e.key === "Tab" && sidebarRef.value) {
+    const focusableElements = sidebarRef.value.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+    );
+    const firstElement = focusableElements[0] as HTMLElement;
+    const lastElement = focusableElements[
+      focusableElements.length - 1
+    ] as HTMLElement;
+
+    if (e.shiftKey) {
+      if (document.activeElement === firstElement) {
+        lastElement.focus();
+        e.preventDefault();
+      }
+    } else {
+      if (document.activeElement === lastElement) {
+        firstElement.focus();
+        e.preventDefault();
+      }
+    }
+  }
+};
+
+onMounted(() => {
+  if (import.meta.client) {
+    window.addEventListener("keydown", handleKeydown);
+  }
+});
+
+onUnmounted(() => {
+  if (import.meta.client) {
+    window.removeEventListener("keydown", handleKeydown);
+    document.body.style.overflow = "";
+  }
+});
 </script>
