@@ -44,7 +44,7 @@
 
         <!-- Content -->
         <div
-          class="flex flex-col 2xl:flex-row items-start 2xl:justify-between px-4 lg:px-[44px] pb-16 overflow-x-hidden relative"
+          class="flex flex-col sidebar:flex-row items-start sidebar:justify-between px-4 lg:px-[44px] pb-16 overflow-x-hidden relative"
         >
           <!-- Navigation -->
           <div
@@ -122,9 +122,9 @@
             </div>
           </div>
 
-          <!-- Image group - below links on screens less than 2xl breakpoint (1536px), wrappable -->
+          <!-- Image group - below links on screens less than 1380px, wrappable -->
           <div
-            class="flex flex-wrap gap-8 lg:gap-[32px] items-end relative shrink-0 w-full 2xl:w-auto mt-8 2xl:mt-0 max-w-full lg:h-[303px]"
+            class="flex flex-wrap gap-8 lg:gap-[32px] items-end relative shrink-0 w-full sidebar:w-auto mt-8 sidebar:mt-0 max-w-full lg:h-[303px]"
           >
             <!-- Image 1 - Small square -->
             <div class="h-[141px] w-[141px] relative shrink-0 block">

@@ -14,6 +14,8 @@
   --breakpoint-2xldt: 123.8125rem;
   --breakpoint-3xldt: 160.0625rem;
   --breakpoint-4xldt: 165.625rem;
+  /* Custom breakpoint for sidebar image wrapping */
+  --breakpoint-sidebar: 86.25rem; /* 1380px */
 }
 
 body {
