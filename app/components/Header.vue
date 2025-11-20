@@ -43,9 +43,9 @@
 </template>
 
 <script setup lang="ts">
-import logoImage from "~/assets/icons/logo.svg";
-import menuIconDesktop from "~/assets/icons/menu-desktop.svg";
-import menuIconMobile from "~/assets/icons/menu-mobile.svg";
-
 const { open } = useSidebar();
+
+const logoImage = "/icons/logo.svg"
+const menuIconDesktop = "/icons/menu-desktop.svg"
+const menuIconMobile = "/icons/menu-mobile.svg"
 </script>

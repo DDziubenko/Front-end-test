@@ -130,34 +130,34 @@ body {
 
 /* Mobile Button Masks */
 .event-button-mobile::before {
-  -webkit-mask: url("/assets/icons/events/button-ellipse.svg") no-repeat
+  -webkit-mask: url("/icons/events/button-ellipse.svg") no-repeat
     center / contain;
-  mask: url("/assets/icons/events/button-ellipse.svg") no-repeat center /
+  mask: url("/icons/events/button-ellipse.svg") no-repeat center /
     contain;
   z-index: 1;
 }
 
 .event-button-mobile::after {
-  -webkit-mask: url("/assets/icons/events/button-wave-mobile.svg") no-repeat
+  -webkit-mask: url("/icons/events/button-wave-mobile.svg") no-repeat
     center / contain;
-  mask: url("/assets/icons/events/button-wave-mobile.svg") no-repeat center /
+  mask: url("/icons/events/button-wave-mobile.svg") no-repeat center /
     contain;
   z-index: 2;
 }
 
 /* Desktop Button Masks */
 .event-button-desktop::before {
-  -webkit-mask: url("/assets/icons/events/button-ellipse.svg") no-repeat
+  -webkit-mask: url("/icons/events/button-ellipse.svg") no-repeat
     center / contain;
-  mask: url("/assets/icons/events/button-ellipse.svg") no-repeat center /
+  mask: url("/icons/events/button-ellipse.svg") no-repeat center /
     contain;
   z-index: 1;
 }
 
 .event-button-desktop::after {
-  -webkit-mask: url("/assets/icons/events/button-wave-desktop.svg") no-repeat
+  -webkit-mask: url("/icons/events/button-wave-desktop.svg") no-repeat
     center / contain;
-  mask: url("/assets/icons/events/button-wave-desktop.svg") no-repeat center /
+  mask: url("/icons/events/button-wave-desktop.svg") no-repeat center /
     contain;
   z-index: 2;
 }

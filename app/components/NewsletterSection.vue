@@ -46,7 +46,7 @@
         aria-label="Submit newsletter form"
       >
         <img
-          src="/assets/icons/guidance_right-arrow.svg"
+          src="/icons/guidance_right-arrow.svg"
           alt=""
           class="shrink-0 w-6 h-6 dt:w-8 dt:h-8 transition-transform duration-300 group-hover:translate-x-1"
           aria-hidden="true"

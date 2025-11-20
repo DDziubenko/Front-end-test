@@ -16,7 +16,7 @@
       <div
         v-for="(item, index) in experiences"
         :key="index"
-        class="border-b border-[#e5e5d8] pb-10 flex flex-col dt:flex-row xldt:flex-col xldt:max-w-[802px] gap-8 xldt:flex-1 xldt:border-b-0 last:border-b-0"
+        class="border-b border-[#e5e5d8] pb-10 flex flex-col dt:flex-row xldt:flex-col xldt:max-w-[802px] gap-6 dt:gap-8 xldt:flex-1 xldt:border-b-0 last:border-b-0"
       >
         <!-- Number for XL layout -->
         <div
@@ -31,7 +31,7 @@
         </div>
 
         <!-- Icon & Title -->
-        <div class="flex gap-6 dt:gap-8 dt:w-[314px] xldt:w-full dt:shrink-0">
+        <div class="flex flex-col gap-8 dt:flex-row dt:w-[314px] xldt:w-full dt:shrink-0">
           <NuxtImg
             :src="item.icon"
             alt=""

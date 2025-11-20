@@ -149,7 +149,7 @@
         >
           <!-- About content -->
           <div
-            class="flex flex-col gap-8 border-t border-[#d1c1aa] pt-8 ldt:pt-0 ldt:border-0"
+            class="flex flex-col gap-8"
           >
             <p
               class="font-taykari text-[36px] dt:text-[48px] 2xl:text-[64px] dt:h-[52px] 2xl:h-auto leading-[1.1] text-[#333333]"

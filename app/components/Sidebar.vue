@@ -28,7 +28,7 @@
           class="flex items-center justify-between px-4 py-6 lg:px-[44px] lg:py-6 h-[104px] shrink-0"
         >
           <div class="h-12 w-[51.2px] shrink-0">
-            <img :src="logoBlack" alt="Logo" class="w-full h-full block" />
+            <img :src="logoGray" alt="Logo" class="w-full h-full block" />
           </div>
           <button
             @click="close"
@@ -39,17 +39,20 @@
           </button>
         </div>
 
+        <!-- Line separator -->
+        <div class="absolute h-px left-4 lg:left-[44px] top-[104px] w-[calc(100%-2rem)] lg:w-[calc(100%-88px)] bg-[#E5E5D8] pointer-events-none"></div>
+
         <!-- Content -->
         <div
-          class="flex flex-col xl:flex-row items-start xl:justify-between px-4 lg:px-[44px] pb-16 overflow-x-hidden"
+          class="flex flex-col 2xl:flex-row items-start 2xl:justify-between px-4 lg:px-[44px] pb-16 overflow-x-hidden relative"
         >
           <!-- Navigation -->
           <div
-            class="flex flex-col gap-8 items-start w-full lg:w-[314px] shrink-0"
+            class="flex flex-col gap-8 lg:gap-[32px] items-start w-full lg:w-[314px] shrink-0"
           >
             <!-- Headline -->
-            <div class="flex gap-1.5 items-center w-full">
-              <div class="w-[14px] h-3 shrink-0 relative">
+            <div class="flex gap-[6px] items-center w-full">
+              <div class="w-3 h-3 shrink-0 relative">
                 <img
                   :src="doodleIcon"
                   alt="Doodle"
@@ -57,109 +60,118 @@
                 />
               </div>
               <p
-                class="font-sans font-bold leading-[1.4] text-[11px] text-black uppercase whitespace-nowrap"
+                class="font-sans font-bold leading-[1.4] text-[11px] text-[#585858] uppercase whitespace-nowrap"
               >
-                Select a space:
+                DISCOVER
               </p>
             </div>
 
             <!-- Menu Items -->
-            <div class="flex flex-col gap-8 items-start w-full">
-              <!-- Beach Experience -->
+            <div class="flex flex-col gap-8 lg:gap-[32px] items-start w-full">
+              <!-- Home -->
               <a
                 href="#"
-                class="flex flex-col items-start text-black w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
-                aria-label="Book Beach Experience - Reserve beach day bed or lounge chair"
+                class="block cursor-pointer text-[#333333] w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
+                aria-label="Home"
               >
                 <h2
-                  class="font-display font-black leading-[1.1] text-[36px] mb-0"
+                  class="font-display font-black leading-[1.1] text-[36px] mb-0 whitespace-pre-wrap"
                 >
-                  Beach Experience
+                  Home
                 </h2>
-                <p
-                  class="font-sans font-normal leading-normal text-base w-full"
-                >
-                  Reserve a beach day bed or lounge chair.
-                </p>
               </a>
 
-              <!-- Restaurant reservation -->
+              <!-- Drink & Dine -->
               <a
                 href="#"
-                class="flex flex-col items-start text-black w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
-                aria-label="Book Restaurant Reservation - Reserve table for dining on deck or beach"
+                class="block cursor-pointer text-[#333333] w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
+                aria-label="Drink & Dine"
               >
                 <h2
-                  class="font-display font-black leading-[1.1] text-[36px] mb-0"
+                  class="font-display font-black leading-[1.1] text-[36px] mb-0 whitespace-pre-wrap"
                 >
-                  Restaurant reservation
+                  Drink & Dine
                 </h2>
-                <p
-                  class="font-sans font-normal leading-normal text-base w-full"
-                >
-                  Book a table for dining, whether on our deck area, or right on
-                  the beach.
-                </p>
               </a>
 
-              <!-- Private Event -->
+              <!-- Our SPACES -->
               <a
                 href="#"
-                class="flex flex-col items-start text-black w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
-                aria-label="Book Private Event - Contact us for special event planning"
+                class="block cursor-pointer text-[#333333] w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
+                aria-label="Our SPACES"
               >
                 <h2
-                  class="font-display font-black leading-[1.1] text-[36px] mb-0"
+                  class="font-display font-black leading-[1.1] text-[36px] mb-0 whitespace-pre-wrap"
                 >
-                  Private Event
+                  Our SPACES
                 </h2>
-                <p
-                  class="font-sans font-normal leading-normal text-base w-full"
+              </a>
+
+              <!-- What's happening -->
+              <a
+                href="#"
+                class="block cursor-pointer text-[#333333] w-full transition-colors duration-300 hover:text-[#F26E21] focus:text-[#F26E21] focus:outline-none focus-visible:text-[#F26E21] focus-visible:outline-none"
+                aria-label="What's happening"
+              >
+                <h2
+                  class="font-display font-black leading-[1.1] text-[36px] mb-0 whitespace-pre-wrap"
                 >
-                  Planning a special event? Contact us for more information.
-                </p>
+                  What's happening
+                </h2>
               </a>
             </div>
           </div>
 
-          <!-- Image group - below links on screens less than 1100px (xl breakpoint), wrappable -->
+          <!-- Image group - below links on screens less than 2xl breakpoint (1536px), wrappable -->
           <div
-            class="flex flex-wrap gap-8 items-end relative shrink-0 w-full xl:w-auto mt-8 xl:mt-0 max-w-full"
+            class="flex flex-wrap gap-8 lg:gap-[32px] items-end relative shrink-0 w-full 2xl:w-auto mt-8 2xl:mt-0 max-w-full lg:h-[303px]"
           >
-            <!-- Image 1 -->
-            <div class="h-[208px] w-[402px] relative shrink-0 block">
+            <!-- Image 1 - Small square -->
+            <div class="h-[141px] w-[141px] relative shrink-0 block">
               <NuxtImg
-                src="/images/sidebar/sidebar-beach.webp"
-                sizes="402px"
-                alt="Beach Experience - Beach day beds and lounge chairs at Bonny Moon Beach Club"
-                class="h-[208px] w-[402px] object-cover"
+                src="/images/sidebar/sidebar-1.webp"
+                sizes="141px"
+                alt="Sidebar image 1"
+                class="h-[141px] w-[141px] object-cover object-center"
                 loading="lazy"
-                width="402"
+                width="141"
+                height="141"
+              />
+            </div>
+            <!-- Image 2 - Large horizontal -->
+            <div class="h-[208px] w-[314px] relative shrink-0 block">
+              <NuxtImg
+                src="/images/sidebar/sidebar-2.webp"
+                sizes="314px"
+                alt="Sidebar image 2"
+                class="h-[208px] w-[314px] object-cover object-center"
+                loading="lazy"
+                width="314"
                 height="208"
               />
             </div>
-            <!-- Image 2 -->
+            <!-- Image 3 - Large vertical -->
             <div class="h-[303px] w-[314px] relative shrink-0 block">
               <NuxtImg
-                src="/images/sidebar/sidebar-cup.webp"
+                src="/images/sidebar/sidebar-3.webp"
                 sizes="314px"
-                alt="Restaurant Reservation - Beachfront dining at Bonny Moon Beach Club"
-                class="h-[303px] w-[314px] object-cover"
+                alt="Sidebar image 3"
+                class="h-[303px] w-[314px] object-cover object-center"
                 loading="lazy"
                 width="314"
                 height="303"
               />
             </div>
-            <!-- Image 3 -->
-            <div class="h-[173px] w-[141px] relative shrink-0 block">
+            <!-- Image 4 - Small vertical -->
+            <div class="h-[230px] w-[141px] relative shrink-0 block">
               <NuxtImg
-                src="/images/sidebar/sidebar-flag.webp"
+                src="/images/sidebar/sidebar-4.webp"
                 sizes="141px"
-                alt="Private Event - Special event planning at Bonny Moon Beach Club"
-                class="h-[173px] w-[141px] object-cover"
+                alt="Sidebar image 4"
+                class="h-[230px] w-[141px] object-cover object-center"
                 loading="lazy"
                 width="141"
-                height="173"
+                height="230"
               />
             </div>
           </div>
@@ -170,11 +182,11 @@
 </template>
 
 <script setup lang="ts">
-import doodleIcon from "~/assets/icons/doodle.svg";
-import logoBlack from "~/assets/icons/logo-black.svg";
-import riCross from "~/assets/icons/ri_cross.svg";
-
 const { isOpen, close } = useSidebar();
+
+const doodleIcon = "/icons/doodle.svg"
+const logoGray = "/icons/logo-gray.svg"
+const riCross = "/icons/ri_cross.svg"
 
 // Accessibility & Scroll Lock
 const sidebarRef = ref<HTMLElement | null>(null);

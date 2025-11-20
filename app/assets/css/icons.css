@@ -23,10 +23,10 @@
 }
 
 .carousel-arrow-prev::before {
-  mask-image: url('/assets/icons/guidance_left-arrow.svg');
+  mask-image: url('/icons/guidance_left-arrow.svg');
 }
 
 .carousel-arrow-next::before {
-  mask-image: url('/assets/icons/guidance_right-arrow.svg');
+  mask-image: url('/icons/guidance_right-arrow.svg');
 }
 
