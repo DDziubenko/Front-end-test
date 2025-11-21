@@ -1,10 +1,10 @@
 <template>
   <footer
-    class="bg-[#FFFFF0] px-4 pt-16 pb-5 dt:px-11 dt:pt-[100px] dt:pb-5 flex flex-col justify-between relative w-full 2xl:min-h-dvh"
+    class="bg-[#FFFFF0] px-4 pt-16 pb-5 dt:px-11 dt:pt-[100px] dt:pb-5 flex flex-col justify-between xl:justify-end relative w-full 2xl:min-h-dvh"
   >
     <!-- Top Section: Logo and Navigation -->
     <div
-      class="flex flex-col gap-8 dt:flex-row dt:justify-between dt:items-start w-full"
+      class="flex flex-col gap-8 dt:flex-row dt:justify-between dt:items-start w-full xl:mb-auto"
     >
       <!-- Logo -->
       <div class="w-[112px] h-[72px] shrink-0">
