@@ -1,8 +1,8 @@
 <template>
-  <section class="bg-[#FFFFF0] px-4 py-16 1.5xl:px-11 1.5xl:py-[100px]">
-    <div class="max-w-[1352px] mx-auto">
+  <section class="bg-[#FFFFF0] px-4 py-16 dt:px-11 dt:py-[100px]">
+    <div class="max-w-[1440px] mx-auto">
       <!-- Mobile Layout -->
-      <div class="1.5xl:hidden flex flex-col gap-8">
+      <div class="dt:hidden flex flex-col gap-8">
         <h2
           class="font-taykari text-[36px] font-normal leading-[1.1] text-[#333]"
         >
@@ -121,7 +121,7 @@
       </div>
 
       <!-- Desktop Layout -->
-      <div class="hidden 1.5xl:flex gap-8 relative 4xldt:min-w-[1352px]">
+      <div class="hidden dt:flex gap-8 relative">
         <!-- Left column -->
         <div class="flex flex-col gap-8 w-[314px] shrink-0 pb-[88px]">
           <div class="flex flex-col gap-4">

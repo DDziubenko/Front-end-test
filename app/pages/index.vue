@@ -4,7 +4,7 @@
       <HeroSection />
       <StoryCarousel />
       <LazyClubExperience />
-      <div class="flex w-full flex-col 4xldt:flex-row justify-between">
+      <div class="flex w-full flex-col justify-between">
         <LazyGallery />
         <LazyEventsSection />
       </div>

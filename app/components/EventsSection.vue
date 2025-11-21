@@ -189,7 +189,7 @@
     </div>
 
     <!-- Desktop Layout -->
-    <div class="max-w-[1352px] mx-auto hidden dt:flex gap-8">
+    <div class="max-w-[1440px] mx-auto hidden dt:flex gap-8">
       <!-- Left Column (Featured Event: DJ Night) -->
       <div
         class="w-[49%] max-w-[660px] flex flex-col gap-4 shrink"

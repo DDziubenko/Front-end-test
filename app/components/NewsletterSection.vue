@@ -1,10 +1,10 @@
 <template>
   <section
-    class="bg-[#FFFFF0] px-4 py-16 dt:py-[100px] flex flex-col items-center overflow-hidden"
+    class="bg-[#FFFFF0] px-4 py-16 dt:py-[100px] flex flex-col items-center overflow-hidden max-w-[1440px] mx-auto"
   >
     <div class="relative flex flex-col items-center text-center max-w-full">
       <h2
-        class="font-['Ostrich_Sans'] font-black leading-[1.1] text-[#E5E5D8] opacity-50 text-[64px] tracking-[1.28px] whitespace-pre-wrap w-[343px] mb-[51px] dt:whitespace-nowrap dt:w-auto text-left dt:text-center dt:mb-[-61px] dt:text-[144px] dt:tracking-[2.88px] 2xl:text-[10vw]"
+        class="font-['Ostrich_Sans'] font-black leading-[1.1] text-[#E5E5D8] opacity-50 text-[64px] tracking-[1.28px] whitespace-pre-wrap w-[343px] mb-[51px] dt:whitespace-nowrap dt:w-auto text-left dt:text-center dt:mb-[-61px] dt:text-[144px] dt:tracking-[2.88px]"
       >
         <span>JOIN OUR NEWSLETTER</span>
       </h2>

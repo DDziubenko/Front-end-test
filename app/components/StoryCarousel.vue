@@ -4,14 +4,14 @@
     aria-labelledby="story-carousel-heading"
   >
     <div
-      class="flex flex-col gap-[60px] max-w-[2546px] mx-auto dt:gap-20 3xldt:flex-row 3xldt:items-start 3xldt:gap-32"
+      class="flex flex-col gap-[60px] max-w-[1440px] mx-auto dt:gap-20"
       @mouseenter="pauseAutoplay"
       @mouseleave="resumeAutoplay"
       @focusin="pauseAutoplay"
       @focusout="resumeAutoplay"
     >
       <!-- Heading -->
-      <div class="w-full dt:max-w-[1008px] 3xldt:w-[900px] 3xldt:shrink-0">
+      <div class="w-full dt:max-w-[1008px]">
         <p
           id="story-carousel-heading"
           class="font-display font-black text-[32px] dt:text-[36px] leading-[1.1] text-[#333333]"
@@ -25,7 +25,7 @@
 
       <!-- Content -->
       <div
-        class="flex flex-col gap-8 ldt:flex-row ldt:items-start ldt:justify-between 3xldt:flex-1"
+        class="flex flex-col gap-8 ldt:flex-row ldt:items-start ldt:justify-between"
       >
         <!-- Images Section - Mobile -->
         <div class="flex flex-col gap-8 ldt:hidden">
@@ -145,19 +145,19 @@
 
         <!-- About Section -->
         <div
-          class="flex flex-col gap-8 ldt:w-[314px] 2xl:w-[500px] ldt:shrink-0 ldt:justify-between ldt:self-stretch"
+          class="flex flex-col gap-8 ldt:w-[314px] ldt:shrink-0 ldt:justify-between ldt:self-stretch"
         >
           <!-- About content -->
           <div
             class="flex flex-col gap-8"
           >
             <p
-              class="font-taykari text-[36px] dt:text-[48px] 2xl:text-[64px] dt:h-[52px] 2xl:h-auto leading-[1.1] text-[#333333]"
+              class="font-taykari text-[36px] dt:text-[48px] dt:h-[52px] leading-[1.1] text-[#333333]"
             >
               About Us
             </p>
             <div
-              class="flex flex-col gap-4 font-sans text-[15px] dt:text-[16px] 2xl:text-[24px] leading-normal text-[#585858]"
+              class="flex flex-col gap-4 font-sans text-[15px] dt:text-[16px] leading-normal text-[#585858]"
             >
               <p>
                 Bonny Moon is where creativity flourishes, fueled by each of us

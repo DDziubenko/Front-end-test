@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-[#FFFFF0] px-4 py-16 dt:px-11 dt:py-[100px] 4xldt:max-w-[2895px] 4xldt:mx-auto"
+    class="bg-[#FFFFF0] px-4 py-16 dt:px-11 dt:py-[100px] max-w-[1440px] mx-auto"
     aria-labelledby="club-experience-title"
   >
     <h2
@@ -11,16 +11,16 @@
     </h2>
 
     <div
-      class="flex flex-col gap-8 dt:gap-10 xldt:flex-row xldt:flex-wrap xldt:items-start xldt:gap-4 xldt:justify-between"
+      class="flex flex-col gap-8 dt:gap-10"
     >
       <div
         v-for="(item, index) in experiences"
         :key="index"
-        class="border-b border-[#e5e5d8] pb-10 flex flex-col dt:flex-row xldt:flex-col xldt:max-w-[802px] gap-6 dt:gap-8 xldt:flex-1 xldt:border-b-0 last:border-b-0"
+        class="border-b border-[#e5e5d8] pb-10 flex flex-col dt:flex-row gap-6 dt:gap-8 last:border-b-0"
       >
         <!-- Number for XL layout -->
         <div
-          class="hidden xl:flex xldt:hidden! w-[314px] shrink-0 items-center justify-start"
+          class="hidden w-[314px] shrink-0 items-center justify-start"
           aria-hidden="true"
         >
           <span
@@ -31,7 +31,7 @@
         </div>
 
         <!-- Icon & Title -->
-        <div class="flex flex-col gap-8 dt:flex-row dt:w-[314px] xldt:w-full dt:shrink-0">
+        <div class="flex flex-col gap-8 dt:flex-row dt:w-[314px] dt:shrink-0">
           <NuxtImg
             :src="item.icon"
             alt=""
@@ -47,10 +47,10 @@
 
         <!-- Description & Link -->
         <div
-          class="flex flex-col gap-6 dt:flex-1 dt:flex-row xldt:flex-col dt:justify-between dt:items-start"
+          class="flex flex-col gap-6 dt:flex-1 dt:flex-row dt:justify-between dt:items-start"
         >
           <p
-            class="font-sans text-[15px] dt:text-base leading-normal text-[#585858] dt:w-[314px] xldt:w-full"
+            class="font-sans text-[15px] dt:text-base leading-normal text-[#585858] dt:w-[314px]"
           >
             {{ item.description }}
           </p>
@@ -60,7 +60,7 @@
             :href="item.href"
             :wavyWidth="item.wavyWidth"
             :wavyHeight="7"
-            class="flex flex-col items-start dt:items-center xldt:items-start gap-2 dt:shrink-0"
+            class="flex flex-col items-start dt:items-center gap-2 dt:shrink-0"
           />
         </div>
       </div>
