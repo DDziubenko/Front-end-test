@@ -182,7 +182,7 @@
 </template>
 
 <script setup lang="ts">
-const { isOpen, close } = useSidebar();
+const { isOpen, close } = useSidebar("menu");
 
 const doodleIcon = "/icons/doodle.svg"
 const logoGray = "/icons/logo-gray.svg"

@@ -1,22 +1,29 @@
-export const useSidebar = () => {
-  const isOpen = useState("sidebar-open", () => false);
+type SidebarKey = "menu" | "booking";
+
+export const useSidebar = (key: SidebarKey) => {
+  const activeSidebar = useState<SidebarKey | null>("sidebar-open", () => null);
 
   const open = () => {
-    isOpen.value = true;
+    activeSidebar.value = key;
   };
 
   const close = () => {
-    isOpen.value = false;
+    if (activeSidebar.value === key) {
+      activeSidebar.value = null;
+    }
   };
 
   const toggle = () => {
-    isOpen.value = !isOpen.value;
+    activeSidebar.value = activeSidebar.value === key ? null : key;
   };
 
+  const isOpen = computed(() => activeSidebar.value === key);
+
   return {
-    isOpen: readonly(isOpen),
+    isOpen,
     open,
     close,
     toggle,
+    activeSidebar: readonly(activeSidebar),
   };
 };

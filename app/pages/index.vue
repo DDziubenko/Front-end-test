@@ -12,6 +12,7 @@
     </main>
     <LazyFooter />
     <LazySidebar />
+    <LazySidebarBooking />
   </div>
 </template>
 
