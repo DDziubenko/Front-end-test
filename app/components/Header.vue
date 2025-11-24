@@ -16,7 +16,7 @@
           />
         </NuxtLink>
         <button
-          @click="open"
+          @click="openMenu"
           class="bg-transparent border-0 p-0 cursor-pointer w-8 h-8 flex items-center justify-center"
           aria-label="Open menu"
         >
@@ -33,17 +33,22 @@
         </button>
       </div>
 
-      <p
-        class="font-['TayKari',sans-serif] text-[32px] leading-[1.1] text-[#f26e21] tracking-[2.88px] m-0 shrink-0 uppercase"
+      <button
+        type="button"
+        @click="toggleBooking"
+        class="font-['TayKari',sans-serif]! text-[32px]! leading-[1.1] text-[#f26e21] tracking-[2.88px] m-0 shrink-0 uppercase bg-transparent border-0 p-0 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f26e21]"
+        aria-controls="booking-sidebar"
+        aria-label="Open booking sidebar"
       >
         BOOKING
-      </p>
+      </button>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
-const { open } = useSidebar();
+const { open: openMenu } = useSidebar("menu");
+const { toggle: toggleBooking } = useSidebar("booking");
 
 const logoImage = "/icons/logo.svg"
 const menuIconDesktop = "/icons/menu-desktop.svg"
